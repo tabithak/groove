@@ -13,7 +13,6 @@
 <meta name="viewport" content="width=device-width">
 <title><?php wp_title(''); ?></title>
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/to-push.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/slick/slick.css"/>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Syncopate' rel='stylesheet' type='text/css'>

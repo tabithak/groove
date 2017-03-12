@@ -1703,7 +1703,7 @@ a.openItem .icon-topic-social-media {
 .post {
 	background: #fff;
 	border-bottom: #ccc 2px solid;
-    padding: 10px 15px;
+    padding: 10px 15px 0;
 	margin-bottom: 15px;
     clear: both;
 }
