@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Mobile Groove</title>
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+<!--[if lt IE 9]>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+<![endif]-->
+<?php wp_head(); ?>
+</head>
+
+<body>
+
+<div id="mainWrap">
+
+  <div id="header">
+    <div id="logo"><a href="/"><img src="<?php echo(IMAGEPATH);?>/logo.jpg"></a></div>
+    <div id="topNav">
+      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => '' ) ); ?>
+    </div>
+    <div id="searchBlock"></div>
+  </div>
+
+  <div id="mainBody">
+    <div id="mainContent">
+
+    </div>
+    <div id="sideBar"></div>
+  </div>
+
+  <div id="footer">
+    <div id="footerContent">
+      <h3>About Mobile Groove</h3>
+      <div id="footAbout">
+        <div id="footAboutImg"><img src="<?php echo(IMAGEPATH);?>/about-graphic.png" /></div>
+        <div id="footAboutBlock"></div>
+      </div>
+      <div id="footNav"></div>
+      <div id="footSocial"></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

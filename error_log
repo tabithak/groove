@@ -1,0 +1,2 @@
+[14-Sep-2015 21:11:00 UTC] PHP Fatal error:  Call to undefined function post_password_required() in /home/peggyannesalz/public_html/wp-content/themes/groove/comments.php on line 7
+[20-Sep-2015 13:29:35 UTC] PHP Fatal error:  Call to undefined function post_password_required() in /home/peggyannesalz/public_html/wp-content/themes/groove/comments.php on line 7

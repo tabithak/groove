@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Mobile Groove</title>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<style>
+*,*:before,*:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.clearfix{*zoom:1;}
+.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
+.clearfix:after{clear:both;}
+
+#searchBlock { background-color: #333; height: 45px; width: 200px; }
+#followUs { float: left; }
+#followUs:hover > #followUsDrop { display: block; }
+#followUsDrop { display: none; }
+#topSearch { float: right; position: relative; }
+.searchButton {font: 0/0 a; display: block; width: 22px;height: 45px;padding: 0px;margin: 0px;background: url('img/searchIcon.png') no-repeat center 0px; cursor: pointer; float: right;  }
+
+.searchField { 
+	position: absolute; top: 0; right: 22px; width: 0px; overflow: hidden;
+    height: 45px; line-height: 45px;  
+    -webkit-transition: all 0.5s ease-in-out; -moz-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;
+    text-align:left; 
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 1%, #e8e8e8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#ffffff), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 1%,#e8e8e8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 1%,#e8e8e8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 1%,#e8e8e8 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffffff 1%,#e8e8e8 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */ 
+    text-align: right;
+}
+</style>
+<script>
+$(document).ready(function(){
+	$("#topSearch").unbind().hover(function(){
+	  var newWidth = $('#followUs').outerWidth();
+	  $("#followUs").css({'opacity':0});
+	  $(this).addClass("searchOpen");
+	  $(".searchField").stop().animate({'width':newWidth+'px'});
+	},function(){
+		$(".searchField").stop().animate({'width':'0px'},function(){
+			$("#followUs").stop().animate({'opacity':1});
+			$("#topSearch").removeClass("searchOpen");
+		});
+	});
+});
+</script>
+</head>
+
+<body>
+
+<div id="searchBlock" class="clearfix">
+
+    <div id="followUs">
+        <div>Follow Us! <img src="img/followUs.png" align="center"></div>
+        <div id="followUsDrop">
+        <div class="followUsSocial"><a href="http://twitter.com/mobilegroove" target="_blank" class="icon-social icon-twitter icon-orange">Twitter</a></div>
+        <div class="followUsSocial"><a href="http://www.facebook.com/pages/MobileGroove/124986987587644" target="_blank" class="icon-social icon-facebook icon-orange">Facebook</a></div>
+        <div class="followUsSocial"><a href="<?php echo SITEPATH;?>/rss" target="_blank" class="icon-social icon-rss icon-orange">RSS</a></div>
+        <div class="followUsSocial"><a href="<?php echo SITEPATH;?>/subscribe" target="_blank" class="icon-social icon-email icon-orange subscribeLink">Subscribe</a></div>
+        </div>
+    </div>
+    
+    <div id="topSearch" class="clearfix">
+        <form role="search" method="get" id="searchform" class="searchform" action="http://chrisburke.info/dev/groove">
+        <div class="searchField"><input type="text" value="Type here to search" name="s" id="s" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;"></div>
+        <div class="searchButton"><a>Search</a></div>
+        </form>
+    </div>
+
+</div>
+        
+        
+</body>
+</html>
