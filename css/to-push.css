@@ -1,0 +1,95 @@
+.seen-content-wrap {
+	background: #e5e5e5;
+	border-bottom: 2px solid #ccc;
+	width: 100%;
+	margin-bottom: 25px;
+}
+.seen-content {
+	padding: 0 0 20px;
+}
+.seen-content h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.seen-content-logo {
+	display: block;
+	float: left;
+	position: relative;
+	width: 20%;
+	height: 83px;
+}
+.seen-content-logo img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+.seen-content .seen-content-logo:last-child {
+	margin-right: 0;
+}
+
+.entry-content p:last-child {
+	padding: 0;
+	margin: 0;
+}
+.entry-topic {
+	color: #757575;
+}
+.homePosts.post h1.entry-title.entry-title-single {
+	font-size: 27px;
+	color: #4c4c4d;
+	padding: 10px 0;
+}
+
+.pressExcerpt li, .type-tribe_events {
+	background: #fff !important;
+	border-bottom: #ccc 2px solid !important;
+    padding: 10px 15px !important;
+	margin-bottom: 15px !important;
+    clear: both !important;
+}
+.tribe-bar, .tribe-bar-disabled, .tribe-bar-collapse-toggle-full-width, .tribe-events-read-more, #tribe-events-bar  {
+	display: none !important;
+}
+h2.tribe-events-list-event-title.entry-title.summary {
+	margin-top: 0 !important;
+	padding-bottom: 6px !important;
+}
+#tribe-events-content > #tribe-events-header {
+	margin-top: 18px;
+}
+#tribe-events-footer {
+	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+.tribe-events-single {
+	background: #fff !important;
+	border-bottom: #ccc 2px solid !important;
+    padding: 10px 15px !important;
+	margin-bottom: 15px !important;
+    clear: both !important;
+}
+.tribe-events-single .type-tribe_events {
+	background: transparent !important;
+	padding: 0 !important;
+	margin-bottom: 0 !important;
+	border-bottom: none !important;
+}
+.tribe-events-notices {
+	background-color: #4c4c4d !important;
+	border: none !important;
+	border-radius: 0 !important;
+	color: #fff !important;
+	font-family: 'Roboto Slab', serif !important;
+	padding: 6px 12px !important;
+	text-shadow: none !important;
+}
+
+.entry-title a, .prTitle a, .featured-article-title a {
+	color: #4c4c4d;
+}
+.entry-title:hover a, .entry-title a:hover, .prTitle a:hover, .featured-article-title a:hover {
+	color: #eb8f31;
+}

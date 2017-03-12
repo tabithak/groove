@@ -2,13 +2,11 @@
 /*
  * Template Name: Home Page 
  */
-get_header(); 
+get_header(); ?>
 
-	
-
-
-?>
 	<div id="mainContent">
+    	
+    
 		<div class="featured-content row cf">
         	<div class="featured-primary featured-primary-box">
             	<div class="featured-primary featured-location">
@@ -125,7 +123,7 @@ get_header();
 </div>
 		
 </div>
-
+	<h3>Recommended Posts</h3>
 
 		<?php /* The loop */ 
 		$args = array(
@@ -159,7 +157,7 @@ get_header();
 		<p class="more-posts view-more-button-text"><a href="<?php echo SITEPATH;?>/posts">View All Posts</a></p>
 
 		<div class="prBox"><h3 class="head">Press Releases <img src="<?php echo IMAGEPATH;?>/realwire.png" align="right"></h3></div>
-		<div class="prContent"><?php realWire_rss_home(); ?><p class="view-more-button-text"><a href="/real-wire">View All Press Releases</a></p></div>
+		<div class="prContent"><?php realWire_rss_home(); ?><p class="view-more-button-text"><a href="<?php echo SITEPATH;?>/real-wire">View All Press Releases</a></p></div>
 	</div>
 
 	<div id="sideBar"><?php get_sidebar('home'); ?></div>

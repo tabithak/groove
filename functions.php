@@ -97,7 +97,7 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
 function realWire_rss_home() {
   include_once(ABSPATH . WPINC . '/rss.php');
   $rss = fetch_rss('http://www.realwire.com/rss/pub/?feed=44925809');
-  $items = array_slice($rss->items, 0, 5);
+  $items = array_slice($rss->items, 0, 12);
   $i = 0;
   echo '<ul class="pressExcerpt container qPager">';
   foreach ($items as $item) {
@@ -124,7 +124,7 @@ function realWire_rss() {
   $items = array_slice($rss->items, 0, 10);
   $i = 0;
   foreach ($items as $item) {
-  echo '<div class="pressPost">';
+  echo '<div class="pressPost post homePosts">';
   $more = $item['link'];
 			echo '<h1 class="entry-title"><a href="'.$more.'" title="'.$d.'">'.htmlentities($item['title'], ENT_NOQUOTES, 'UTF-8').'</a></h1>';
       echo '<p class="prDate">'.substr($item['pubdate'], 0, -12).'</p>';

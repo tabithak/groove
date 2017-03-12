@@ -1,6 +1,6 @@
-var navContainer = "#topNav" // This is the div that wraps around your <ul>
+var navContainer = "#topNav"; // This is the div that wraps around your <ul>
 
-var resizeWidth = 990 // This is the width you want to hide navigation and make it mobile friendly
+var resizeWidth = 990; // This is the width you want to hide navigation and make it mobile friendly
 
 var navOpen = false;
 
@@ -638,3 +638,8 @@ jQuery(document).ready(function(){
 
   });
 
+$('p').each(function() {
+    var $this = $(this);
+    if($this.html().replace(/\s|&nbsp;/g, '').length == 0)
+        $this.remove();
+});
