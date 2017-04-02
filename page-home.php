@@ -10,7 +10,7 @@ get_header(); ?>
 		<div class="featured-content row cf">
         	<div class="featured-primary featured-primary-box">
             	<div class="featured-primary featured-location">
-                	<a href="http://www.forbes.com/sites/peggyannesalz/2016/01/12/why-mobile-video-advertising-will-eat-the-world/#227c64307868" class="featured-primary featured-tag" target="_blank">OUR WORK ON FORBES</a>
+                	<a href="http://www.forbes.com/sites/peggyannesalz/2016/01/12/why-mobile-video-advertising-will-eat-the-world/#227c64307868" class="featured-primary featured-tag" target="_blank"><img src="<?php echo IMAGEPATH; ?>/seen-on/logo-forbes-sm.png"></a>
                     <a class="featured-primary featured-topic-icon featured-topic-icon-marketing">Topic: Mobile Marketing</a>
                 </div>
             	<div class="featured-primary featured-article">
@@ -20,36 +20,7 @@ get_header(); ?>
                     <p class="featured-primary featured-article-content">Borrowing from the title of the milestone presentation Mobile is Eating the World (given by mobile analyst and authority Benedict Evans at Andreessen Horowitz's Tech Summit 2014) is the best way to describe how mobile video&mdash;powered by mobile programmatic&mdash;is poised to rock the digital world in 2016. Top line numbers show mobile video viewing is already eating into desktop’s leading share of video views. It’s a migration that can be attributed to the advance of high-speed 4G mobile networks that reduce latency, making mobile video accessible and enjoyable for more consumers in more markets.</p>
                 </div>
            	</div>
-            <div class="featured-secondary featured-secondary-box cf">
-            	<div class="featured-secondary-single">
-                	<div class="featured-secondary-single featured-location">
-                		<a href="http://venturebeat.com/2015/12/09/the-next-opportunity-for-app-developers-turning-anonymous-data-into-ad-sales/" class="featured-primary featured-tag" target="_blank" title="The next opportunity for app developers: Turning anonymous data into ad sales">OUR WORK ON VENTUREBEAT</a>
-                        <a class="featured-secondary-single featured-topic-icon featured-topic-icon-apps">Topic: Mobile Apps</a>
-                    </div>
-                    <div class="featured-secondary-single featured-article">
-                    	<div class="featured-secondary-single featured-image"><img src="<?php echo IMAGEPATH; ?>/posts/business-apps.jpg" alt="business apps"></div>
-                        <h2 class="featured-secondary-single featured-article-title"><a href="http://venturebeat.com/2015/12/09/the-next-opportunity-for-app-developers-turning-anonymous-data-into-ad-sales/" title="The next opportunity for app developers: Turning anonymous data into ad sales" target="_blank">The next opportunity for app developers: Turning anonymous data into ad sales</a></h2>
-                    	<p class="featured-secondary-single featured-article-author">Author: <span class="author">Peggy Anne Salz</span></p>
-                        <p class="featured-secondary-single featured-article-content">In the early days of the Internet, publishers made the transition from selling their inventory &mdash; allowing brands to wrap advertising around articles, pictures, and videos &mdash; to the far more lucrative business of selling the data they collected about the people browsing their sites. Fast forward, and mobile app publishers are at a similar crossroads.</p>
-                    </div>
-                </div>
-                <div class="featured-secondary-group">
-                	<div class="featured-secondary-group featured-location">
-                        <span class="featured-secondary-group featured-tag">OUR WORK AROUND THE WEB</span>
-                    </div>
-                    <div class="featured-secondary-group featured-article cf">
-                        <div class="sideThumb"><img class="featured-secondary-group featured-image" src="<?php echo IMAGEPATH; ?>/posts/nov15-04-fst067012-1200x675.jpg" alt="pixelated construction workers"></div>
-                        <h3 class="featured-secondary-group featured-article-title"><a href="https://hbr.org/2015/11/the-changing-economics-of-app-development" title="The Changing Economics of App Development" target="_blank">The Changing Economics of App Development</a></h3>
-                        
-                    </div>
-                    <div class="featured-secondary-group featured-article cf">
-                    	<div class="sideThumb"><img class="featured-secondary-group featured-image" src="<?php echo IMAGEPATH; ?>/posts/NewsRepublic.jpg" alt="smartphone app displays"></div>
-                        <h3 class="featured-secondary-group featured-article-title"><a href="https://digitalcontentnext.org/blog/2016/01/27/qa-gilles-raymond-news-republic-founder-and-ceo/" title="Q&A: Gilles Raymond, News Republic Founder and CEO" target="_blank">Q&amp;A: Gilles Raymond, News Republic Founder and CEO</a></h3>
-                    </div>
-                </div>
-            </div>
-           
-            </div>
+         </div>
             
             <div class="featured-writing">
             	<p><a href="mailto:peggy@mobilegroove.com" title="Contact">From content marketing strategy and consulting to the creation of compelling white papers, custom research and blog posts &#8212; tell us what you need and we'll deliver. Get in touch &raquo;</a></p>
@@ -123,7 +94,7 @@ get_header(); ?>
 </div>
 		
 </div>
-	<h3>Recommended Posts</h3>
+	<h3>Recommended Articles</h3>
 
 		<?php /* The loop */ 
 		$args = array(
@@ -154,7 +125,7 @@ get_header(); ?>
 		</article><!-- #post -->
 
 		<?php endwhile; ?>
-		<p class="more-posts view-more-button-text"><a href="<?php echo SITEPATH;?>/posts">View All Posts</a></p>
+		<p class="more-posts view-more-button-text"><a href="<?php echo SITEPATH;?>/posts">View All Articles</a></p>
 
 		<div class="prBox"><h3 class="head">Press Releases <img src="<?php echo IMAGEPATH;?>/realwire.png" align="right"></h3></div>
 		<div class="prContent"><?php realWire_rss_home(); ?><p class="view-more-button-text"><a href="<?php echo SITEPATH;?>/real-wire">View All Press Releases</a></p></div>

@@ -102,11 +102,11 @@ ga('send', 'pageview');
    <div class="seen-content-wrap">
     <div class="seen-content row cf">
         <h1>As seen on</h1>
-        <span class="seen-content-logo"><img src="http://localhost/mg/dev-2017/wp-content/themes/groove/img/seen-on/logo-forbes.png"></span>
-        <span class="seen-content-logo"><img src="http://localhost/mg/dev-2017/wp-content/themes/groove/img/seen-on/logo-hbr.png"></span>
-        <span class="seen-content-logo"><img src="http://localhost/mg/dev-2017/wp-content/themes/groove/img/seen-on/logo-venturebeat.png"></span>
-        <span class="seen-content-logo"><img src="http://localhost/mg/dev-2017/wp-content/themes/groove/img/seen-on/logo-mma.png"></span>
-        <span class="seen-content-logo"><img src="http://localhost/mg/dev-2017/wp-content/themes/groove/img/seen-on/logo-gamesindustry.png"></span>
+        <span class="seen-content-logo"><img src="<?php echo(IMAGEPATH);?>/seen-on/logo-forbes.png"></span>
+        <span class="seen-content-logo"><img src="<?php echo(IMAGEPATH);?>/seen-on/logo-hbr.png"></span>
+        <span class="seen-content-logo"><img src="<?php echo(IMAGEPATH);?>/seen-on/logo-venturebeat.png"></span>
+        <span class="seen-content-logo"><img src="<?php echo(IMAGEPATH);?>/seen-on/logo-mma.png"></span>
+        <span class="seen-content-logo"><img src="<?php echo(IMAGEPATH);?>/seen-on/logo-gamesindustry.png"></span>
     </div>
    </div>
    <div class="row">
