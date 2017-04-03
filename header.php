@@ -106,7 +106,7 @@ ga('send', 'pageview');
         <span class="seen-content-logo"><img src="<?php echo(IMAGEPATH);?>/seen-on/logo-hbr.png"></span>
         <span class="seen-content-logo"><img src="<?php echo(IMAGEPATH);?>/seen-on/logo-venturebeat.png"></span>
         <span class="seen-content-logo"><img src="<?php echo(IMAGEPATH);?>/seen-on/logo-mma.png"></span>
-        <span class="seen-content-logo"><img src="<?php echo(IMAGEPATH);?>/seen-on/logo-gamesindustry.png"></span>
+        <span class="seen-content-logo"><img src="<?php echo(IMAGEPATH);?>/seen-on/logo-pocketgamerbiz.png"></span>
     </div>
    </div>
    <div class="row">

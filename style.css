@@ -1640,6 +1640,7 @@ a.openItem .icon-topic-social-media {
 .thumb-image {
 	margin-bottom: 6px;
 }
+.entry-thumbnail img { width: 100%; }
 .entry-text {
     float: left;
 }
